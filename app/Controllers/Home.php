@@ -14,8 +14,6 @@ class Home extends BaseController
 
         $kendaraans = $kendaraanModel->findAll();
         $logs = $logModel->findAll();
-
-        // Kelompokkan logs per kendaraan dan progress
         $logMap = [];
         foreach ($logs as $log) {
             $key = strtoupper($log['nopol']);
