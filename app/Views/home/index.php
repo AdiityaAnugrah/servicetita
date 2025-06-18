@@ -270,7 +270,7 @@ function formatTanggalIndo($datetime)
                     <div class="step-counter">
                         <?= $i < $currentIndex || ($i === $currentIndex && $step === 'KELUAR') ? '✔' : $i + 1 ?>
                     </div>
-                    <div class="step-name"><?= ($step === 'KELUAR') ? 'Selesai' : $step ?></div>
+                    <div class="step-name"><?= ($step === 'KELUAR') ? 'SELESAI' : $step ?></div>
                     <?php if ($waktu): ?>
                     <div class="progress-time"><?= formatTanggalIndo($waktu) ?></div>
                     <?php endif; ?>
@@ -310,7 +310,7 @@ function formatTanggalIndo($datetime)
                                     <div class="tree-line-horizontal <?= $side === 0 ? 'left' : 'right' ?>"></div>
                                     <div class="tree-date"><?= $tanggal ?></div>
                                     <div class="tree-step <?= $status ?>">
-                                        <?= ($step === 'KELUAR') ? 'Selesai' : $step ?>
+                                        <?= ($step === 'KELUAR') ? 'SELESAI' : $step ?>
                                     </div>
                                 </div>
                                 <?php endforeach; ?>
