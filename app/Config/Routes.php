@@ -28,3 +28,11 @@ $routes->get('proses/view_finish', 'KendaraanController::finish');
 $routes->get('proses/view_siapkeluar', 'KendaraanController::siapKeluar');
 $routes->get('proses/view_keluar', 'KendaraanController::keluar');
 $routes->get('proses/view_stop', 'KendaraanController::stop');
+
+
+// LOGIN & REGISTER
+$routes->get('/login', 'AuthController::login_page');
+$routes->post('/login', 'AuthController::login');
+$routes->get('/register', 'AuthController::register_page');
+$routes->post('/register', 'AuthController::register');
+$routes->get('/logout', 'AuthController::logout');
